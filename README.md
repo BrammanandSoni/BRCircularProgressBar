@@ -15,15 +15,14 @@ It shows circular progress for multi purpose like download, upload and timer pro
 # Description
 
 This control can be used for multi purpose like:
-Showing download progress
-Showing upload progress
-Showing timer with an interval
+Showing download progress,
+Showing upload progress,
+Showing timer with an interval.
 
 And this is fully configurable, you can set the different color of each part of the progress bar like
-circleColor
-circleBackgroundColor
-progressCircleColor
-progressCircleBackgroundColor
+circleColor,
+circleBackgroundColor,
+progressCircleColor,
+progressCircleBackgroundColor.
 
-
-
+![Alt text](https://github.com/BrammanandSoni/BRCircularProgressBar/blob/master/BRCircularProgressBar/info.png)
