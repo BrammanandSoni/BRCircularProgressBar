@@ -30,10 +30,11 @@ class ViewController: UIViewController {
     func showTimerProgressViaNIB() {
         progressBarNIB.setCircleStrokeWidth(10)
         var second: CGFloat = 60
+        progressBarNIB.setProgressText("\(Int(second))")
         Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] (timer) in
             second -= 1
             self?.progressBarNIB.progress = second/60
-            self?.progressBarNIB.setProgressText("\(second)")
+            self?.progressBarNIB.setProgressText("\(Int(second))")
             
             if second == 0 { // restart rotation
                 second = 60
