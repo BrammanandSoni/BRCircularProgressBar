@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         
         let progressView = BRCircularProgressView(frame: CGRect(x: self.view.frame.size.width/2 - 25, y: progressBarNIB.frame.origin.y - 150, width: 50, height: 50))
         progressView.setCircleStrokeWidth(5)
-        progressView.setCircleColor(UIColor.lightGray, circleBackgroundColor: UIColor.white, progressCircleColor: UIColor.blue, progressCircleBackgroundColor: UIColor(red: 0, green: 0, blue: 0, alpha: 0.3))
+        progressView.setCircleStrokeColor(UIColor.lightGray, circleFillColor: UIColor.white, progressCircleStrokeColor: UIColor.blue, progressCircleFillColor: UIColor(red: 0, green: 0, blue: 0, alpha: 0.3))
         
         let completeProgress: CGFloat = 100
         var progressCompleted: CGFloat = 0

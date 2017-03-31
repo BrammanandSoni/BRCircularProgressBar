@@ -9,10 +9,10 @@
 import UIKit
 
 class BRDefaultColor {
-    static let circleColor: UIColor = UIColor(red: 233.0/255.0, green: 233.0/255.0, blue: 233.0/255.0, alpha: 1)
-    static let circleBackgroundColor: UIColor = UIColor.white
-    static let progressCircleColor: UIColor = UIColor(red: 0.0/255.0, green: 184.0/255.0, blue: 249.0/255.0, alpha: 1)
-    static let progressCircleBackgroundColor: UIColor = UIColor(red: 0.0/255.0, green: 184.0/255.0, blue: 249.0/255.0, alpha: 0.2)
+    static let circleStrokeColor: UIColor = UIColor(red: 233.0/255.0, green: 233.0/255.0, blue: 233.0/255.0, alpha: 1)
+    static let circleFillColor: UIColor = UIColor.white
+    static let progressCircleStrokeColor: UIColor = UIColor(red: 0.0/255.0, green: 184.0/255.0, blue: 249.0/255.0, alpha: 1)
+    static let progressCircleFillColor: UIColor = UIColor(red: 0.0/255.0, green: 184.0/255.0, blue: 249.0/255.0, alpha: 0.2)
 }
 
 class BRCircularProgressView: UIView {
@@ -25,10 +25,10 @@ class BRCircularProgressView: UIView {
     }
     
     private var circleStrokeWidth: CGFloat = 5
-    private var circleColor: UIColor = BRDefaultColor.circleColor
-    private var circleBackgroundColor: UIColor = BRDefaultColor.circleBackgroundColor
-    private var progressCircleColor: UIColor = BRDefaultColor.progressCircleColor
-    private var progressCircleBackgroundColor: UIColor = BRDefaultColor.progressCircleBackgroundColor
+    private var circleStrokeColor: UIColor = BRDefaultColor.circleStrokeColor
+    private var circleFillColor: UIColor = BRDefaultColor.circleFillColor
+    private var progressCircleStrokeColor: UIColor = BRDefaultColor.progressCircleStrokeColor
+    private var progressCircleFillColor: UIColor = BRDefaultColor.progressCircleFillColor
     
     private var textLabel: UILabel!
     private var textFont: UIFont? = UIFont.boldSystemFont(ofSize: 17)
@@ -52,14 +52,14 @@ class BRCircularProgressView: UIView {
     
     func setCircleStrokeWidth(_ circleStrokeWidth: CGFloat) {
         self.circleStrokeWidth = circleStrokeWidth
-        setCircleColor()
+        setCircleStrokeColor()
     }
     
-    func setCircleColor(_ circleColor: UIColor = BRDefaultColor.circleColor, circleBackgroundColor: UIColor = BRDefaultColor.circleBackgroundColor, progressCircleColor: UIColor = BRDefaultColor.progressCircleColor, progressCircleBackgroundColor: UIColor = BRDefaultColor.progressCircleBackgroundColor) {
-        self.circleColor = circleColor
-        self.circleBackgroundColor = circleBackgroundColor
-        self.progressCircleColor = progressCircleColor
-        self.progressCircleBackgroundColor = progressCircleBackgroundColor
+    func setCircleStrokeColor(_ circleStrokeColor: UIColor = BRDefaultColor.circleStrokeColor, circleFillColor: UIColor = BRDefaultColor.circleFillColor, progressCircleStrokeColor: UIColor = BRDefaultColor.progressCircleStrokeColor, progressCircleFillColor: UIColor = BRDefaultColor.progressCircleFillColor) {
+        self.circleStrokeColor = circleStrokeColor
+        self.circleFillColor = circleFillColor
+        self.progressCircleStrokeColor = progressCircleStrokeColor
+        self.progressCircleFillColor = progressCircleFillColor
         
         self.setNeedsDisplay()
     }
@@ -89,9 +89,9 @@ class BRCircularProgressView: UIView {
     
     override func draw(_ rect: CGRect) {
         super.draw(rect)
-        drawRect(rect, margin: 0, color: circleColor, percentage: 1)
-        drawRect(rect, margin: circleStrokeWidth, color: circleBackgroundColor, percentage: 1)
-        drawRect(rect, margin: circleStrokeWidth, color: progressCircleBackgroundColor, percentage: progress)
+        drawRect(rect, margin: 0, color: circleStrokeColor, percentage: 1)
+        drawRect(rect, margin: circleStrokeWidth, color: circleFillColor, percentage: 1)
+        drawRect(rect, margin: circleStrokeWidth, color: progressCircleFillColor, percentage: progress)
         
         drawProgressCircle(rect)
     }
@@ -116,7 +116,7 @@ class BRCircularProgressView: UIView {
     private func drawProgressCircle(_ rect: CGRect) {
         let context: CGContext = UIGraphicsGetCurrentContext()!
         context.setLineWidth(circleStrokeWidth)
-        context.setStrokeColor(progressCircleColor.cgColor)
+        context.setStrokeColor(progressCircleStrokeColor.cgColor)
         
         let centerX: CGFloat = rect.width * 0.5
         let centerY: CGFloat = rect.height * 0.5
