@@ -12,3 +12,18 @@ It shows circular progress for multi purpose like download, upload and timer pro
     progressView.setProgressTextFont(UIFont.systemFont(ofSize: 17), color: UIColor.green)
     progressView.setProgressText("50")
 
+# Description
+
+This control can be used for multi purpose like:
+Showing download progress
+Showing upload progress
+Showing timer with an interval
+
+And this is fully configurable, you can set the different color of each part of the progress bar like
+circleColor
+circleBackgroundColor
+progressCircleColor
+progressCircleBackgroundColor
+
+
+
