@@ -15,6 +15,7 @@
 		4427E1861E8C1B890079A17F /* BRCircularProgressBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4427E1851E8C1B890079A17F /* BRCircularProgressBarTests.swift */; };
 		4427E1911E8C1B890079A17F /* BRCircularProgressBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4427E1901E8C1B890079A17F /* BRCircularProgressBarUITests.swift */; };
 		446AE2011E8E54C700AF604B /* BRCircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 446AE2001E8E54C700AF604B /* BRCircularProgressView.swift */; };
+		446AE2031E8E673C00AF604B /* info.png in Resources */ = {isa = PBXBuildFile; fileRef = 446AE2021E8E673C00AF604B /* info.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		4427E1901E8C1B890079A17F /* BRCircularProgressBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRCircularProgressBarUITests.swift; sourceTree = "<group>"; };
 		4427E1921E8C1B890079A17F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		446AE2001E8E54C700AF604B /* BRCircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BRCircularProgressView.swift; sourceTree = "<group>"; };
+		446AE2021E8E673C00AF604B /* info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				4427E1721E8C1B890079A17F /* ViewController.swift */,
 				446AE1FF1E8E54C700AF604B /* BRCircularProgressView */,
 				4427E1741E8C1B890079A17F /* Main.storyboard */,
+				446AE2021E8E673C00AF604B /* info.png */,
 				4427E1771E8C1B890079A17F /* Assets.xcassets */,
 				4427E1791E8C1B890079A17F /* LaunchScreen.storyboard */,
 				4427E17C1E8C1B890079A17F /* Info.plist */,
@@ -246,6 +249,7 @@
 				4427E17B1E8C1B890079A17F /* LaunchScreen.storyboard in Resources */,
 				4427E1781E8C1B890079A17F /* Assets.xcassets in Resources */,
 				4427E1761E8C1B890079A17F /* Main.storyboard in Resources */,
+				446AE2031E8E673C00AF604B /* info.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
