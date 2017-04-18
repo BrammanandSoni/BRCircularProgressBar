@@ -14,15 +14,15 @@ This project provides a multipurpose head-up display (HUD). This circular HUD is
 
 # Description
 
-This control can be used for multi purpose like:
-* Showing download progress,
-* Showing upload progress,
-* Showing timer with an interval.
+This project can be used for:
+* Showing download progress
+* Showing upload progress
+* Showing timer with an interval
 
-And this is fully configurable, you can set the different color of each part of the progress. Customize your progress bar with
-* circleStrokeColor,
-* circleFillColor,
-* progressCircleStrokeColor,
-* progressCircleFillColor.
+Customize your progress bar with:
+* circleColor
+* circleBackgroundColor
+* progressCircleColor
+* progressCircleBackgroundColor
 
 ![Alt text](https://github.com/BrammanandSoni/BRCircularProgressBar/blob/master/BRCircularProgressBar/info.png)
